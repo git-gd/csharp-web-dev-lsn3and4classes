@@ -12,7 +12,7 @@ namespace SchoolPractice
         public int NumberOfCredits { get; set; }
         public double Gpa { get; set; }
 
-        Student(string name, int studentId, int numberOfCredits, double gpa)
+        public Student(string name, int studentId, int numberOfCredits, double gpa)
         {
             Name = name;
             StudentId = studentId;

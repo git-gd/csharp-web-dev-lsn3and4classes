@@ -11,7 +11,7 @@ namespace SchoolPractice
         public string Subject { get; set; }
         public int YearsTeaching { get; set; }
 
-        Teacher(string firstName, string lastName, string subject, int yearsTeaching)
+        public Teacher(string firstName, string lastName, string subject, int yearsTeaching)
         {
             FirstName = firstName;
             LastName = lastName;

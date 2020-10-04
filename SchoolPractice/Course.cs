@@ -10,7 +10,7 @@ namespace SchoolPractice
         public Teacher Teacher { get; set; }
         public List<Student> Students { get; set; }
 
-        Course(Teacher teacher, string courseTitle, List<Student> students)
+        public Course(Teacher teacher, string courseTitle, List<Student> students)
         {
             Teacher = teacher;
             CourseTitle = courseTitle;
