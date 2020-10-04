@@ -10,7 +10,7 @@ namespace SchoolPractice
         {
             // TODO: Instantiate your objects and test your exercise solutions with print statements here.
             Student yourself = new Student("yourself", 1, 1, 4.0);
-            Student someone = new Student("Larry", 1, 1, 3.5);
+            Student someone = new Student("Larry", 2, 1, 3.5);
             List<Student> listOfStudents = new List<Student>();
             listOfStudents.Add(yourself);
             listOfStudents.Add(someone);
@@ -18,7 +18,13 @@ namespace SchoolPractice
 
             Course course = new Course(teacher, "Science Stuff 101", listOfStudents);
 
-            Console.WriteLine(course.Teacher.FirstName);
+            Console.WriteLine($"Teacher: {course.Teacher.FirstName} {course.Teacher.LastName}");
+            Console.WriteLine($"Course : {course.CourseTitle}");
+            Console.WriteLine("Students:");
+            foreach (Student student in course.Students)
+            {
+                Console.WriteLine($"{student.Name} ID[{student.StudentId}] Credits[{student.NumberOfCredits}] GPA[{student.Gpa}]");
+            }
         }
     }
 }
